@@ -5,6 +5,7 @@ import java.util.GregorianCalendar;
 
 import by.epamtc.calendar.printer.CalendarPrinter;
 import by.epamtc.calendar.printer.MonthPrinter;
+import by.epamtc.calendar.printer.YearPrinter;
 
 public class Main {
 
@@ -18,6 +19,9 @@ public class Main {
 		
 		CalendarPrinter calendarPrinter = new MonthPrinter();
 		calendarPrinter.printCalendar(calendar);
+		
+		CalendarPrinter yearPrinter = new YearPrinter();
+		yearPrinter.printCalendar(calendar);
 
 	}
 
